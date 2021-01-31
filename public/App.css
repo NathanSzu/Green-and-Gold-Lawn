@@ -1,0 +1,14 @@
+.background {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -2;
+}
+
+.season-background {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
