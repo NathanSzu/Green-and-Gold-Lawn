@@ -1,15 +1,18 @@
 .background {
     position: absolute;
-    opacity: 0%;
     top: 0px;
     bottom: 0px;
     left: 0px;
     right: 0px;
-    z-index: -2;
+    z-index: -1;
 }
 
 .season-background {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.hide-xoverflow {
+    overflow-x: hidden;
 }

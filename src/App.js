@@ -12,37 +12,37 @@ function App() {
   useEffect(() => {
     var currentDate = `${new Date()}`;
     if (currentDate.includes('Dec') || currentDate.includes('Jan') || currentDate.includes('Feb')) {
-      gsap.to('.winter', {css:{opacity:100}})
-      setSeason('winter')
+      setSeason(winter);
     } else if (currentDate.includes('Mar') || currentDate.includes('Apr') || currentDate.includes('May')) {
-      gsap.to('.spring', {css:{opacity:100}})
-      setSeason('spring')
+      setSeason(spring)
     } else if (currentDate.includes('Jun') || currentDate.includes('Jul') || currentDate.includes('Aug')) {
-      gsap.to('.summer', {css:{opacity:100}})
-      setSeason('summer')
+      setSeason(summer)
     } else if (currentDate.includes('Sep') || currentDate.includes('Oct') || currentDate.includes('Nov')) {
-      gsap.to('.fall', {css:{opacity:100}})
-      setSeason('fall')
+      setSeason(fall)
     }
   }, [])
 
-  const toggleSeason = () => {
-    
+  // Function to toggle season backgrounds and other elements
+  const toggleSeason = (e) => {
+    if (e.target.value === 'spring') {
+      setSeason(spring)
+    } else if (e.target.value === 'summer') {
+      setSeason(summer)
+    } else if (e.target.value === 'fall') {
+      setSeason(fall)
+    } else if (e.target.value === 'winter') {
+      setSeason(winter)
+    }
   }
 
   return (
     <div>
+      <button value='summer' onClick={toggleSeason}>Summer!</button>
+      <button value='fall' onClick={toggleSeason}>Fall!</button>
+      <button value='winter' onClick={toggleSeason}>Winter!</button>
+      <button value='spring' onClick={toggleSeason}>Spring!</button>
       <div className='background summer'>
-        <Background src={summer} alt='Summer image' />
-      </div>
-      <div className='background winter'>
-        <Background src={winter} alt='Winter image' />
-      </div>
-      <div className='background spring'>
-        <Background src={spring} alt='Spring image' />
-      </div>
-      <div className='background fall'>
-        <Background src={fall} alt='Fall image' />
+        <Background src={season} alt='Summer image' />
       </div>
     </div>
   );
