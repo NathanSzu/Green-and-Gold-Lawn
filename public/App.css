@@ -4,6 +4,24 @@
     bottom: 0px;
     left: 0px;
     right: 0px;
+    z-index: -2;
+}
+
+.navtab {
+    border-style: none;
+    padding: 7px;
+}
+
+.clear {
+    opacity: 0%
+}
+
+.display {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
     z-index: -1;
 }
 

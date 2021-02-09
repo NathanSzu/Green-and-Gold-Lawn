@@ -11,6 +11,7 @@ function App() {
 
   useEffect(() => {
     var currentDate = `${new Date()}`;
+
     if (currentDate.includes('Dec') || currentDate.includes('Jan') || currentDate.includes('Feb')) {
       setSeason(winter);
     } else if (currentDate.includes('Mar') || currentDate.includes('Apr') || currentDate.includes('May')) {
@@ -24,6 +25,7 @@ function App() {
 
   // Function to toggle season backgrounds and other elements
   const toggleSeason = (e) => {
+    console.log('clicked')
     if (e.target.value === 'spring') {
       setSeason(spring)
     } else if (e.target.value === 'summer') {
@@ -37,12 +39,14 @@ function App() {
 
   return (
     <div>
-      <button value='summer' onClick={toggleSeason}>Summer!</button>
-      <button value='fall' onClick={toggleSeason}>Fall!</button>
-      <button value='winter' onClick={toggleSeason}>Winter!</button>
-      <button value='spring' onClick={toggleSeason}>Spring!</button>
-      <div className='background summer'>
-        <Background src={season} alt='Summer image' />
+      <div className='row pr-2 pl-2'>
+        <button className={season === spring ? 'navtab col-3 clear' : 'navtab col-3'} value='spring' onClick={toggleSeason}>Spring</button>
+        <button className={season === summer ? 'navtab col-3 clear' : 'navtab col-3'} value='summer' onClick={toggleSeason}>Summer</button>
+        <button className={season === fall ? 'navtab col-3 clear' : 'navtab col-3'} value='fall' onClick={toggleSeason}>Fall</button>
+        <button className={season === winter ? 'navtab col-3 clear' : 'navtab col-3'} value='winter' onClick={toggleSeason}>Winter</button>
+      </div>
+      <div className='background'>
+        <Background src={season} alt='' />
       </div>
     </div>
   );
