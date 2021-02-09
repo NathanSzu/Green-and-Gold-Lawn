@@ -8,32 +8,49 @@ import gsap from "gsap";
 
 function App() {
   const [season, setSeason] = useState('')
+  const [seasonText, setSeasonText] = useState('')
 
   useEffect(() => {
+    gsap.set('.season', { xPercent: 100 })
+
     var currentDate = `${new Date()}`;
 
     if (currentDate.includes('Dec') || currentDate.includes('Jan') || currentDate.includes('Feb')) {
-      setSeason(winter);
+      setSeason(winter); setSeasonText('winter')
     } else if (currentDate.includes('Mar') || currentDate.includes('Apr') || currentDate.includes('May')) {
-      setSeason(spring)
+      setSeason(spring); setSeasonText('spring')
     } else if (currentDate.includes('Jun') || currentDate.includes('Jul') || currentDate.includes('Aug')) {
-      setSeason(summer)
+      setSeason(summer); setSeasonText('summer')
     } else if (currentDate.includes('Sep') || currentDate.includes('Oct') || currentDate.includes('Nov')) {
-      setSeason(fall)
+      setSeason(fall); setSeasonText('fall')
     }
   }, [])
+
+  const updateSpring = () => { setSeason(spring); setSeasonText('spring') }
+
+  const updateSummer = () => { setSeason(summer); setSeasonText('summer') }
+
+  const updateFall = () => { setSeason(fall); setSeasonText('fall') }
+
+  const updateWinter = () => { setSeason(winter); setSeasonText('winter') }
 
   // Function to toggle season backgrounds and other elements
   const toggleSeason = (e) => {
     console.log('clicked')
-    if (e.target.value === 'spring') {
-      setSeason(spring)
-    } else if (e.target.value === 'summer') {
-      setSeason(summer)
-    } else if (e.target.value === 'fall') {
-      setSeason(fall)
-    } else if (e.target.value === 'winter') {
-      setSeason(winter)
+    if (seasonText === e.target.value) {
+
+    } else {
+      gsap.set('.season', { xPercent: 100 })
+
+      if (e.target.value === 'spring') {
+        gsap.to('.spring', { duration: .7, xPercent: 0, ease: "power4.out", onComplete: updateSpring })
+      } else if (e.target.value === 'summer') {
+        gsap.to('.summer', { duration: .7, xPercent: 0, ease: "power4.out", onComplete: updateSummer })
+      } else if (e.target.value === 'fall') {
+        gsap.to('.fall', { duration: .7, xPercent: 0, ease: "power4.out", onComplete: updateFall })
+      } else if (e.target.value === 'winter') {
+        gsap.to('.winter', { duration: .7, xPercent: 0, ease: "power4.out", onComplete: updateWinter })
+      }
     }
   }
 
@@ -45,8 +62,24 @@ function App() {
         <button className={season === fall ? 'navtab col-3 clear' : 'navtab col-3'} value='fall' onClick={toggleSeason}>Fall</button>
         <button className={season === winter ? 'navtab col-3 clear' : 'navtab col-3'} value='winter' onClick={toggleSeason}>Winter</button>
       </div>
+
+      {/* Actual background */}
       <div className='background'>
-        <Background src={season} alt='' />
+        <Background src={season} alt='Background' />
+      </div>
+
+      {/* Animated season switching backgrounds */}
+      <div className='season spring'>
+        <Background src={spring} alt='Spring' />
+      </div>
+      <div className='season summer'>
+        <Background src={summer} alt='Summer' />
+      </div>
+      <div className='season fall'>
+        <Background src={fall} alt='Fall' />
+      </div>
+      <div className='season winter'>
+        <Background src={winter} alt='Winter' />
       </div>
     </div>
   );
