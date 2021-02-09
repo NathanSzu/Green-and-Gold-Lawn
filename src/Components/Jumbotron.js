@@ -2,14 +2,22 @@ import React from 'react'
 
 export default function Jumbotron() {
     return (
-        <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
+        <div class="jumbotron pt-5">
+            <h1 class="display-4 text-center header-font">
+                <span>
+                    <span className='green'>Green</span> & <span className='gold'>Gold</span>
+                </span>
+            </h1>
+            <h1 class="display-4 text-center mb-5 header-font">
+                <span className='brown'>Landscaping</span>
+            </h1>
             <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
             <hr class="my-4"></hr>
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                </p>
-        </div>         
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+            <div className='j-background'></div>
+        </div>
     )
 }
