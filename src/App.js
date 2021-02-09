@@ -4,6 +4,7 @@ import winter from './Assets/Snow.jpg';
 import spring from './Assets/Spring.jpg';
 import fall from './Assets/Fall.jpg';
 import Background from './Components/Background';
+import Jumbotron from './Components/Jumbotron';
 import gsap from "gsap";
 
 function App() {
@@ -42,8 +43,8 @@ function App() {
     } else {
       gsap.set('.season', { xPercent: 100 })
       gsap.timeline()
-      .set('.navtab', {yPercent:-105})
-      .from('.navtab', {delay:.5 ,duration: .25, yPercent:-105})
+        .set('.navtab', { yPercent: -105 })
+        .from('.navtab', { delay: .5, duration: .25, yPercent: -105 })
 
       if (e.target.value === 'spring') {
         gsap.to('.spring', { duration: .7, xPercent: 0, ease: "power4.out", onComplete: updateSpring })
@@ -64,6 +65,12 @@ function App() {
         <button className='navtab col-3' value='summer' onClick={toggleSeason}>Summer</button>
         <button className='navtab col-3' value='fall' onClick={toggleSeason}>Fall</button>
         <button className='navtab col-3' value='winter' onClick={toggleSeason}>Winter</button>
+      </div>
+
+      <div className='vertical-center w-100'>
+        <div className='col-md-10 col-lg-8 mr-auto ml-auto'>
+          <Jumbotron />
+        </div>
       </div>
 
       {/* Actual background */}
