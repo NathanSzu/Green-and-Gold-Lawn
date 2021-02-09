@@ -41,6 +41,9 @@ function App() {
 
     } else {
       gsap.set('.season', { xPercent: 100 })
+      gsap.timeline()
+      .set('.navtab', {yPercent:-105})
+      .from('.navtab', {delay:.5 ,duration: .25, yPercent:-105})
 
       if (e.target.value === 'spring') {
         gsap.to('.spring', { duration: .7, xPercent: 0, ease: "power4.out", onComplete: updateSpring })
@@ -57,10 +60,10 @@ function App() {
   return (
     <div>
       <div className='row pr-2 pl-2'>
-        <button className={season === spring ? 'navtab col-3 clear' : 'navtab col-3'} value='spring' onClick={toggleSeason}>Spring</button>
-        <button className={season === summer ? 'navtab col-3 clear' : 'navtab col-3'} value='summer' onClick={toggleSeason}>Summer</button>
-        <button className={season === fall ? 'navtab col-3 clear' : 'navtab col-3'} value='fall' onClick={toggleSeason}>Fall</button>
-        <button className={season === winter ? 'navtab col-3 clear' : 'navtab col-3'} value='winter' onClick={toggleSeason}>Winter</button>
+        <button className='navtab col-3' value='spring' onClick={toggleSeason}>Spring</button>
+        <button className='navtab col-3' value='summer' onClick={toggleSeason}>Summer</button>
+        <button className='navtab col-3' value='fall' onClick={toggleSeason}>Fall</button>
+        <button className='navtab col-3' value='winter' onClick={toggleSeason}>Winter</button>
       </div>
 
       {/* Actual background */}
