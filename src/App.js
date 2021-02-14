@@ -6,6 +6,7 @@ import fall from './Assets/Fall.jpg';
 import Background from './Components/Background';
 import Jumbotron from './Components/Jumbotron';
 import gsap from "gsap";
+import './App.css'
 
 function App() {
   const [season, setSeason] = useState('')
