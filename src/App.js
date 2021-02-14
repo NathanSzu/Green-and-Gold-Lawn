@@ -68,7 +68,7 @@ function App() {
       </div>
 
       <div className='vertical-center w-100'>
-        <div className='col-md-10 col-lg-8 mr-auto ml-auto'>
+        <div className='col-md-10 col-lg-8 mr-auto ml-auto smallscreen-edit'>
           <Jumbotron />
         </div>
       </div>

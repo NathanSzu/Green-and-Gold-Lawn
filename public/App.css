@@ -15,7 +15,7 @@ button:focus {
     right: 0;
     z-index: -1;
     background-color: whitesmoke;
-    opacity: 75%;
+    opacity: 85%;
 }
 
 .green {
@@ -32,7 +32,9 @@ button:focus {
 
 .header-font {
     font-family: 'Darkness of the night', sans-serif;
+    font-size: 46px;
     line-height: 1.5;
+    text-shadow: 2px 2px black;
 }
 
 .vertical-center {
@@ -83,4 +85,32 @@ button:focus {
 
 .hide-xoverflow {
     overflow-x: hidden;
+}
+
+.description {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+}
+
+@media screen and (max-width: 991px) {
+    .description {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .header-font {
+        font-size: 9vw;
+    }
+
+    .description {
+        margin: 5px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .smallscreen-edit {
+        padding: 0px;
+    }
 }
