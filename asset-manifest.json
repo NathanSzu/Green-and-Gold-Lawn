@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Green-and-Gold-Lawn/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/Green-and-Gold-Lawn/static/js/main.ade15ffd.chunk.js",
+    "main.js.map": "/Green-and-Gold-Lawn/static/js/main.ade15ffd.chunk.js.map",
+    "runtime-main.js": "/Green-and-Gold-Lawn/static/js/runtime-main.4e774b29.js",
+    "runtime-main.js.map": "/Green-and-Gold-Lawn/static/js/runtime-main.4e774b29.js.map",
+    "static/js/2.280619f9.chunk.js": "/Green-and-Gold-Lawn/static/js/2.280619f9.chunk.js",
+    "static/js/2.280619f9.chunk.js.map": "/Green-and-Gold-Lawn/static/js/2.280619f9.chunk.js.map",
+    "static/js/3.bbd87a7b.chunk.js": "/Green-and-Gold-Lawn/static/js/3.bbd87a7b.chunk.js",
+    "static/js/3.bbd87a7b.chunk.js.map": "/Green-and-Gold-Lawn/static/js/3.bbd87a7b.chunk.js.map",
+    "index.html": "/Green-and-Gold-Lawn/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/Green-and-Gold-Lawn/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.280619f9.chunk.js.LICENSE.txt": "/Green-and-Gold-Lawn/static/js/2.280619f9.chunk.js.LICENSE.txt",
+    "static/media/Fall.b044f674.jpg": "/Green-and-Gold-Lawn/static/media/Fall.b044f674.jpg",
+    "static/media/Grass.69beed34.jpg": "/Green-and-Gold-Lawn/static/media/Grass.69beed34.jpg",
+    "static/media/Snow.d75f823f.jpg": "/Green-and-Gold-Lawn/static/media/Snow.d75f823f.jpg",
+    "static/media/Spring.090d59d2.jpg": "/Green-and-Gold-Lawn/static/media/Spring.090d59d2.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4e774b29.js",
+    "static/js/2.280619f9.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.ade15ffd.chunk.js"
+  ]
+}

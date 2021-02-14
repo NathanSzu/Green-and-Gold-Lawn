@@ -1,0 +1,116 @@
+button:focus {
+    outline: none;
+}
+
+.jumbotron {
+    position: relative;
+    background-color: unset;
+}
+
+.j-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: whitesmoke;
+    opacity: 85%;
+}
+
+.green {
+    color: rgb(36, 66, 60);
+}
+
+.gold {
+    color: rgb(252, 190, 20);
+}
+
+.brown {
+    color: #2a1b0d;
+}
+
+.header-font {
+    font-family: 'Darkness of the night', sans-serif;
+    font-size: 46px;
+    line-height: 1.5;
+    text-shadow: 2px 2px black;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.background {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -3;
+}
+
+.season {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -2;
+}
+
+.navtab {
+    border-style: none;
+    padding: 7px;
+}
+
+.display {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+.season-background {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hide-xoverflow {
+    overflow-x: hidden;
+}
+
+.description {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+}
+
+@media screen and (max-width: 991px) {
+    .description {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .header-font {
+        font-size: 9vw;
+    }
+
+    .description {
+        margin: 5px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .smallscreen-edit {
+        padding: 0px;
+    }
+}
