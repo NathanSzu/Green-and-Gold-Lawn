@@ -27,13 +27,13 @@ function App() {
     }
   }, [])
 
-  const updateSpring = () => { setSeason(spring); setSeasonText('spring') }
+  const updateSpring = () => { setSeason(spring); setSeasonText('spring'); gsap.set('.navtab', { pointerEvents: 'auto' }) }
 
-  const updateSummer = () => { setSeason(summer); setSeasonText('summer') }
+  const updateSummer = () => { setSeason(summer); setSeasonText('summer'); gsap.set('.navtab', { pointerEvents: 'auto' }) }
 
-  const updateFall = () => { setSeason(fall); setSeasonText('fall') }
+  const updateFall = () => { setSeason(fall); setSeasonText('fall'); gsap.set('.navtab', { pointerEvents: 'auto' }) }
 
-  const updateWinter = () => { setSeason(winter); setSeasonText('winter') }
+  const updateWinter = () => { setSeason(winter); setSeasonText('winter'); gsap.set('.navtab', { pointerEvents: 'auto' }) }
 
   // Function to toggle season backgrounds and other elements
   const toggleSeason = (e) => {
@@ -43,31 +43,29 @@ function App() {
     } else {
       gsap.set('.season', { xPercent: 100 })
       gsap.timeline()
-        .set('.navtab', { yPercent: -105 })
-        .from('.navtab', { delay: .5, duration: .25, yPercent: -105 })
+        .set('.navtab', { pointerEvents: 'none' })
 
       if (e.target.value === 'spring') {
-        gsap.to('.spring', { duration: .7, xPercent: 0, ease: "power4.out", onComplete: updateSpring })
+        gsap.to('.spring', { duration: .6, xPercent: 0, ease: "power4.out", onComplete: updateSpring })
       } else if (e.target.value === 'summer') {
-        gsap.to('.summer', { duration: .7, xPercent: 0, ease: "power4.out", onComplete: updateSummer })
+        gsap.to('.summer', { duration: .6, xPercent: 0, ease: "power4.out", onComplete: updateSummer })
       } else if (e.target.value === 'fall') {
-        gsap.to('.fall', { duration: .7, xPercent: 0, ease: "power4.out", onComplete: updateFall })
+        gsap.to('.fall', { duration: .6, xPercent: 0, ease: "power4.out", onComplete: updateFall })
       } else if (e.target.value === 'winter') {
-        gsap.to('.winter', { duration: .7, xPercent: 0, ease: "power4.out", onComplete: updateWinter })
+        gsap.to('.winter', { duration: .6, xPercent: 0, ease: "power4.out", onComplete: updateWinter })
       }
     }
   }
 
   return (
     <div>
-      <div className='row pr-2 pl-2'>
-        <button className='navtab col-3' value='spring' onClick={toggleSeason}>Spring</button>
-        <button className='navtab col-3' value='summer' onClick={toggleSeason}>Summer</button>
-        <button className='navtab col-3' value='fall' onClick={toggleSeason}>Fall</button>
-        <button className='navtab col-3' value='winter' onClick={toggleSeason}>Winter</button>
-      </div>
-
       <div className='vertical-center w-100'>
+        <nav className='col-md-10 col-lg-8 mr-auto ml-auto smallscreen-edit'>
+          <button className='navtab col-3' value='spring' onClick={toggleSeason}>Spring</button>
+          <button className='navtab col-3' value='summer' onClick={toggleSeason}>Summer</button>
+          <button className='navtab col-3' value='fall' onClick={toggleSeason}>Fall</button>
+          <button className='navtab col-3' value='winter' onClick={toggleSeason}>Winter</button>
+        </nav>
         <div className='col-md-10 col-lg-8 mr-auto ml-auto smallscreen-edit'>
           <Jumbotron />
         </div>
