@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Green-and-Gold-Lawn/static/css/main.98072316.chunk.css",
-    "main.js": "/Green-and-Gold-Lawn/static/js/main.ba9596a7.chunk.js",
-    "main.js.map": "/Green-and-Gold-Lawn/static/js/main.ba9596a7.chunk.js.map",
-    "runtime-main.js": "/Green-and-Gold-Lawn/static/js/runtime-main.5b68b0d5.js",
-    "runtime-main.js.map": "/Green-and-Gold-Lawn/static/js/runtime-main.5b68b0d5.js.map",
+    "main.css": "/Green-and-Gold-Lawn/static/css/main.1ea6aabb.chunk.css",
+    "main.js": "/Green-and-Gold-Lawn/static/js/main.6d16a291.chunk.js",
+    "main.js.map": "/Green-and-Gold-Lawn/static/js/main.6d16a291.chunk.js.map",
+    "runtime-main.js": "/Green-and-Gold-Lawn/static/js/runtime-main.4e774b29.js",
+    "runtime-main.js.map": "/Green-and-Gold-Lawn/static/js/runtime-main.4e774b29.js.map",
     "static/js/2.280619f9.chunk.js": "/Green-and-Gold-Lawn/static/js/2.280619f9.chunk.js",
     "static/js/2.280619f9.chunk.js.map": "/Green-and-Gold-Lawn/static/js/2.280619f9.chunk.js.map",
-    "static/js/3.bfb78c27.chunk.js": "/Green-and-Gold-Lawn/static/js/3.bfb78c27.chunk.js",
-    "static/js/3.bfb78c27.chunk.js.map": "/Green-and-Gold-Lawn/static/js/3.bfb78c27.chunk.js.map",
+    "static/js/3.bbd87a7b.chunk.js": "/Green-and-Gold-Lawn/static/js/3.bbd87a7b.chunk.js",
+    "static/js/3.bbd87a7b.chunk.js.map": "/Green-and-Gold-Lawn/static/js/3.bbd87a7b.chunk.js.map",
     "index.html": "/Green-and-Gold-Lawn/index.html",
-    "static/css/main.98072316.chunk.css.map": "/Green-and-Gold-Lawn/static/css/main.98072316.chunk.css.map",
+    "static/css/main.1ea6aabb.chunk.css.map": "/Green-and-Gold-Lawn/static/css/main.1ea6aabb.chunk.css.map",
     "static/js/2.280619f9.chunk.js.LICENSE.txt": "/Green-and-Gold-Lawn/static/js/2.280619f9.chunk.js.LICENSE.txt",
     "static/media/Fall.b044f674.jpg": "/Green-and-Gold-Lawn/static/media/Fall.b044f674.jpg",
     "static/media/Grass.69beed34.jpg": "/Green-and-Gold-Lawn/static/media/Grass.69beed34.jpg",
@@ -18,9 +18,9 @@
     "static/media/Spring.090d59d2.jpg": "/Green-and-Gold-Lawn/static/media/Spring.090d59d2.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5b68b0d5.js",
+    "static/js/runtime-main.4e774b29.js",
     "static/js/2.280619f9.chunk.js",
-    "static/css/main.98072316.chunk.css",
-    "static/js/main.ba9596a7.chunk.js"
+    "static/css/main.1ea6aabb.chunk.css",
+    "static/js/main.6d16a291.chunk.js"
   ]
 }
