@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/darkness-of-the-night');
+
 button:focus {
     outline: none;
 }
@@ -36,6 +38,11 @@ button:focus {
     line-height: 1.5;
     text-shadow: 2px 2px black;
 }
+
+.n {
+    font-size: 40px;
+}
+
 
 .vertical-center {
   margin: 0;
@@ -112,5 +119,9 @@ button:focus {
 
     .smallscreen-edit {
         padding: 0px;
+    }
+
+    .n {
+        font-size: 8vw;
     }
 }
