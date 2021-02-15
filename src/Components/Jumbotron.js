@@ -20,7 +20,7 @@ export default function Jumbotron() {
                 <a className="btn btn-dark btn-lg" href='tel:123-456-7890' role="button">Call Now</a>
             </div>
 
-            <div className='j-background'></div>
+            <div className='j-bg'></div>
         </div>
     )
 }

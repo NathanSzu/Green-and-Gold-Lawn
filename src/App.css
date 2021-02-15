@@ -9,7 +9,7 @@ button:focus {
     background-color: unset;
 }
 
-.j-background {
+.j-bg {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -42,6 +42,7 @@ button:focus {
 .n {
     font-size: 40px;
 }
+
 
 .vertical-center {
   margin: 0;
